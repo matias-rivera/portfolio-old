@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Matias Rivera</title>
 </head>
 <body>
-    <header class="header">
 
-        
 
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" name="" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                
+                <li class="navigation__item"><a href="#section-home" class="navigation__link js-scrollBtnI"><span>#1</span>Inicio</a></li>
+                <li class="navigation__item"><a href="#section-about" class="navigation__link js-scrollBtnI"><span>#2</span> Acerca</a></li>
+                <li class="navigation__item"><a href="#section-services" class="navigation__link js-scrollBtnI"><span>#3</span>Servicios</a></li>
+                <li class="navigation__item"><a href="#section-portfolio" class="navigation__link js-scrollBtnI"><span>#4</span>Portfolio</a></li>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link js-scrollBtnI"><span>#5</span>Contacto</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+    <header class="header" id="section-home">
   <!--       <div class="header__logo-box">
             <img src="img/logo.png" alt="logo" class="header__logo">
         </div> -->
@@ -22,7 +44,7 @@
                     MATIAS RIVERA
                 </span>
                 <span class="heading-primary--sub">
-                    Desarrollador Fullstack
+                    Programador
                 </span>
             </h1>
             <a href="#" class="btn--animated btn--white btn  " >Portfolio</a>
@@ -34,12 +56,315 @@
         <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                    Servicios
+                    Acerca de mí
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Me especializo en desarrollo web
+                    </h3>
+                    <p class="paragraph">
+                        Desde el lado del backend hago uso del lenguaje de programación PHP junto con el framework Laravel para el desarrollo de aplicaciones.
+                    </p>
+                    <p class="paragraph">
+                        Por otra parte, desde el frontend manejo CSS, SASS, Javascript y librerías como VueJS, ReactJS y Bootstrap.
+                    </p>
+
+                    <a href="#" class="btn-text">Descargar CV <i class="icon-basic-sheet-txt"></i></a>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div class="picture">
+
+                        <img src="./img/undraw_laravel_and_vue_59tp.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-services" id="section-services">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary heading-secondary--white">
+                    Mis servicios
                 </h2>
             </div>
 
-
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="service-box">
+                        <i class="service-box__icon icon-basic-webpage-txt"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Diseño web</h3>
+                        <p class="service-box__text">
+                            Maquetado y un diseño responsivo para que su sitio web pueda ser visto desde cualquier dispositivo
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="service-box">
+                        <i class="service-box__icon icon-basic-gear"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Desarrollo web</h3>
+                        <p class="service-box__text">
+                            Desde el desarrollo hasta la puesta en marcha con interfaces que facilitan el manejo de los datos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="service-box">
+                       <i class="service-box__icon icon-basic-settings"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Mantenimiento</h3>
+                        <p class="service-box__text">
+                            Localización y arreglo de molestos bugs que se encuetran en aplicaciones ya desplegadas. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="service-box">
+                        <i class="service-box__icon icon-basic-spread-text"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Documentación</h3>
+                        <p class="service-box__text">
+                            Una clara y definida documentación para poder facilitar el posterior mantenimiento de su sitio.                         </p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
+
+        <section class="section-portfolio" id="section-portfolio">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Portfolio
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            
+                            <div class="card__side-picture-container ">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    FORO
+                                </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <p class="card__details-paragraph">
+                                    Red de social desarrollada en Laravel. Cuenta con usuarios, portada, sección de foros, publicaciones, comentarios, respuestas y perfiles.
+                                </p>
+                                <div class="card__details-button">
+                                    <a href="#" class="btn-text">Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn-text">Código <i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            
+                            <div class="card__side-picture-container ">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    CMS
+                                </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <p class="card__details-paragraph">
+                                    Red de social desarrollada en Laravel. Cuenta con usuarios, portada, sección de foros, publicaciones, comentarios, respuestas y perfiles.
+                                </p>
+                                <div class="card__details-button">
+                                    <a href="#" class="btn-text">Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn-text">Código <i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div> 
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            
+                            <div class="card__side-picture-container ">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    E-COMMERCE
+                                </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <p class="card__details-paragraph">
+                                    Red de social desarrollada en Laravel. Cuenta con usuarios, portada, sección de foros, publicaciones, comentarios, respuestas y perfiles.
+                                </p>
+                                <div class="card__details-button">
+                                    <a href="#" class="btn-text">Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn-text">Código <i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            
+                            <div class="card__side-picture-container ">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    LARAVEL API
+                                </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <p class="card__details-paragraph">
+                                    Red de social desarrollada en Laravel. Cuenta con usuarios, portada, sección de foros, publicaciones, comentarios, respuestas y perfiles.
+                                </p>
+                                <div class="card__details-button">
+                                    <a href="#" class="btn-text">Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn-text">Código <i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            
+                            <div class="card__side-picture-container ">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    PORTFOLIO
+                                </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <p class="card__details-paragraph">
+                                    Red de social desarrollada en Laravel. Cuenta con usuarios, portada, sección de foros, publicaciones, comentarios, respuestas y perfiles.
+                                </p>
+                                <div class="card__details-button">
+                                    <a href="#" class="btn-text">Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn-text">Código <i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div> 
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section-contact" id="section-contact">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary heading-secondary--white">
+                    Contacto
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="service-box">
+                        <i class="service-box__icon icon-basic-smartphone"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Teléfono</h3>
+                        <p class="service-box__text">
+                            +3804709730                         
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="service-box">
+                        <i class="service-box__icon icon-basic-mail"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Email</h3>
+                        <p class="service-box__text">
+                            jmrivera1100@gmail.com                         
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="service-box">
+                        <i class="service-box__icon icon-basic-geolocalize-01"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Dirección</h3>
+                        <p class="service-box__text">
+                            La Rioja - Capital                         
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
     </main>
+    <footer class="footer">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary heading-secondary--white">
+                Matias Rivera
+            </h2>
+        </div>
+   
+        <div class="row">
+            <ul class="footer__list u-center-text">
+                <li class="footer__item">
+                    <a href="#section-home" class="footer__link">Inicio</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#section-about" class="footer__link">Acerca</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#section-services" class="footer__link">Servicios</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#section-portfolio" class="footer__link">Portfolio</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#section-contact" class="footer__link">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

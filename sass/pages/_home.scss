@@ -7,3 +7,49 @@
         padding: 20rem 0;
     }
 }
+
+
+.section-services{
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.9),
+        rgba($color-primary-dark, 0.9)),
+    url('../../img/header-large.jpg');
+    background-size: cover;
+  
+    transform: skewY(7deg); 
+    margin-top: -12rem;
+    
+
+    & > *{
+        transform: skewY(-7deg);
+    }
+
+    @include respond(tab-port){ 
+        padding: 10rem 0;
+    }
+}
+
+
+.section-portfolio{
+    background-color: $color-grey-light-2; 
+    padding: 35rem 0;
+    margin-top: -20vh;
+ 
+    @include respond(tab-port){ 
+        padding: 20rem 0;
+    }
+}
+
+
+.section-contact{
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom,
+    $color-primary-light,
+    $color-primary-dark);
+
+    @include respond(tab-port){ 
+        padding: 10rem 0;
+    }
+}
