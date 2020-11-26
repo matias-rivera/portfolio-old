@@ -27,7 +27,8 @@ breakpoint argument choices:
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -201,6 +202,9 @@ body {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -259,6 +263,10 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+@media (max-width: 56.25em) {
+  .btn {
+    margin-top: 1em; } }
+
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #ff8c1a;
@@ -278,6 +286,63 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.social-menu ul {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 10px; }
+    .social-menu ul li .fa {
+      font-size: 25px;
+      line-height: 50px;
+      transition: .5s; }
+    .social-menu ul li .fa {
+      color: #000; }
+    .social-menu ul li a {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #f7f7f7;
+      text-align: center;
+      transition: 0.5s;
+      transform: translate(0, 0px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      .social-menu ul li a:hover {
+        transform: rotate(0deg) skew(0deg) translate(0, -10px); }
+        .social-menu ul li a:hover .fa {
+          color: #f7f7f7; }
+    .social-menu ul li .github:hover {
+      background-color: #000; }
+    .social-menu ul li .linkedin:hover {
+      background-color: #0077B5; }
+    .social-menu ul li .facebook:hover {
+      background-color: #3b5999; }
+
+/* .social-menu ul li:nth-child(1) a:hover {
+    background-color: #0f0f0f;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #0077B5;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #3b5999;
+
+} */
+/* .social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+} */
+/* .social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+ */
 .picture {
   position: relative; }
   .picture img {
@@ -348,12 +413,38 @@ body {
     .card__picture:hover {
       -webkit-transform: scale(1.3);
       transform: scale(1.3); }
-    .card__picture--1 {
-      background-image: url(../../img/computer-large.jpg); }
-    .card__picture--2 {
-      background-image: url(../../img/nat-6.jpg); }
-    .card__picture--3 {
-      background-image: url(../../img/nat-7.jpg); }
+    .card__picture--restobar {
+      background: url(../img/restobar.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--ecommerce {
+      background: url(../img/ecommerce.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--foro {
+      background: url(../img/foro.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--blog {
+      background: url(../img/blog.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--portfolio {
+      background: url(../img/portfolio.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--landing-page {
+      background: url(../img/landing-page.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--no-image {
+      background: url(../img/no-image.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .card__picture--under-construction {
+      background: url(../img/under-construction.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -366,20 +457,19 @@ body {
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    /* &--2{
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-primary-light,.85),
-            rgba($color-primary-dark,.85));
-        }
-
-        &--3{
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light,.85),
-            rgba($color-tertiary-dark,.85));
-        } */ }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    box-decoration-break: clone; }
+    .card__heading-span--css {
+      background-image: linear-gradient(to right bottom, rgba(255, 179, 102, 0.85), rgba(230, 115, 0, 0.85)); }
+    .card__heading-span--node {
+      background-image: linear-gradient(to right bottom, rgba(91, 219, 74, 0.9), rgba(94, 167, 65, 0.9)); }
+    .card__heading-span--mern {
+      background-image: linear-gradient(to right bottom, rgba(91, 219, 74, 0.9), rgba(23, 158, 199, 0.9)); }
+    .card__heading-span--react {
+      background-image: linear-gradient(to right bottom, rgba(41, 230, 255, 0.85), rgba(23, 158, 199, 0.85)); }
+    .card__heading-span--laravel {
+      background-image: linear-gradient(to right bottom, rgba(255, 118, 136, 0.85), rgba(238, 48, 48, 0.85)); }
+    .card__heading-span--vue {
+      background-image: linear-gradient(to right bottom, rgba(65, 184, 131, 0.85), rgba(52, 73, 94, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details-paragraph {
@@ -479,7 +569,7 @@ body {
 
 .header {
   height: 95vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/header-large.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-large.jpg");
   /* background-image: linear-gradient(to right bottom,
     rgba($color-primary-light, 0.7),
     rgba($color-primary-dark, 0.7)),
@@ -655,7 +745,7 @@ body {
 
 .section-services {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(255, 179, 102, 0.9), rgba(230, 115, 0, 0.9)), url("../../img/header-large.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 179, 102, 0.9), rgba(230, 115, 0, 0.9)), url("../img/header-large.jpg");
   background-size: cover;
   transform: skewY(7deg);
   margin-top: -12rem; }

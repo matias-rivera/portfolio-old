@@ -15,7 +15,7 @@
         to right bottom,
         rgba($color-primary-light, 0.9),
         rgba($color-primary-dark, 0.9)),
-    url('../../img/header-large.jpg');
+    url('../img/header-large.jpg');
     background-size: cover;
   
     transform: skewY(7deg); 
@@ -48,7 +48,7 @@
     background-image: linear-gradient(to right bottom,
     $color-primary-light,
     $color-primary-dark);
-
+  
     @include respond(tab-port){ 
         padding: 10rem 0;
     }
