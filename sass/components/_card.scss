@@ -55,59 +55,67 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         transition: all .8s ease;
+       
         
        
         &:hover{
             -webkit-transform: scale(1.3);
             transform: scale(1.3); 
         }
-
+ 
         &--restobar{
-            background: url(../img/restobar.png);
+            background: url(../img/restobar.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
            
         }
         &--ecommerce{
-            background: url(../img/ecommerce.png);
+            background: url(../img/ecommerce.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
         }
         &--foro{
-            background: url(../img/foro.png);
+            background: url(../img/foro.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
         }
 
         &--blog{
-            background: url(../img/blog.png);
+            background: url(../img/blog.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
+      
         }
 
         &--portfolio{
-            background: url(../img/portfolio.png);
+            background: url(../img/portfolio.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
+     
         }
 
         &--landing-page{
-            background: url(../img/landing-page.png);
+            background: url(../img/landing-page.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
+   
+        }
+
+        &--netflix{
+            background: url(../img/netflix.jpg);
+            background-size: 100% 100%;
+   
+        }
+
+        &--poketeca{
+            background: url(../img/poketeca.jpg);
+            background-size: 100% 100%;
+   
         }
 
 
         &--no-image{
             background: url(../img/no-image.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
         }
 
         &--under-construction{
             background: url(../img/under-construction.jpg);
             background-size: 100% 100%;
-            background-repeat: no-repeat;
         }
     }
 
