@@ -437,6 +437,9 @@ body {
     .card__picture--poketeca {
       background: url(../img/poketeca.jpg);
       background-size: 100% 100%; }
+    .card__picture--resto-store {
+      background: url(../img/resto-store.jpg);
+      background-size: 100% 100%; }
     .card__picture--no-image {
       background: url(../img/no-image.jpg);
       background-size: 100% 100%; }
